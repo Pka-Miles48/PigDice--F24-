@@ -20,7 +20,7 @@ function rollDie() {
     if (isPlaying) {
         const dice = Math.floor(Math.random() * 6) + 1;
         document.getElementById('die').value = dice;
-        document.getElementById('diceImage').src = `red-dice${dice}.png`; // Update the dice image
+        document.getElementById('diceImage').src = `green-dice${dice}.png`; // Update the dice image
         if (dice !== 1) {
             currentScore += dice;
             document.getElementById('total').value = currentScore;
